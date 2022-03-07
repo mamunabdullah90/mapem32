@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #66806A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    background-color: #105652;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+}
+
+h2 span {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: anim2 2s linear infinite;
+}
+
+@keyframes anim2 {
+    100% {
+        color: yellow;
+    }
+}
+
+a {
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: 60px;
+    height: 30px;
+    padding: 5px 8px;
+    border-radius: 25px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, .6);
+    background: beige;
+    transition: .5s;
+}
+
+a:hover {
+    background: yellow;
+    box-shadow: 7px 10px 13px rgba(0, 0, 0, .8);
+}
+
+div {
+    width: 60%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 20px;
+    background: #1E6F5C;
+    
+    
+}
+
+/* video{
+    width: 100%;
+    height: 300;
+    border: 5px solid yellow;
+    border-radius: 5px;
+    margin-top: 5px;
+} */
+
+p {
+    padding: 25px 30px 10px 30px;
+    text-align: left;
+    color: #2C272E;
+}
+
+p span {
+    font-size: larger;
+    color: yellow;
+    font-weight: 800;
+}
+
+/* video{
+    width: 300px;
+    height: 250px;
+} */
+h3 {
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    background-color: #FFC75F;
+    color: red;
+    /* margin-left: 30px; */
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: anim 2s linear infinite;
+}
+
+@keyframes anim {
+    100% {
+        color: green;
+        font-weight: 700;
+    }
+}
+
+h3 span {
+    color: green;
+    animation: anim3 2s linear infinite;
+}
+
+@keyframes anim3 {
+    100% {
+        color: red;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    h2 span {
+        font-size: 1.5rem;
+    }
+
+    div {
+        width: 80%;
+    }
+
+    /* iframe{
+        width: 90%;
+        height: 300px;
+    } */
+}
+
+@media only screen and (max-width: 768px) {
+    div {
+        width: 90%;
+    }
+}
